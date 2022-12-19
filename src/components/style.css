@@ -1,0 +1,460 @@
+.image-part{
+    text-align: center;
+    margin-top: 20px;
+}
+.filter-onClick{
+    /* filter: blur(3px); */
+}
+.upper-part{
+    display: flex;
+    width:700px;
+    justify-content: space-between;
+    margin: auto;
+    
+}
+.card img{
+    background-position: center;
+    height:160px;
+}
+.whole_body{
+    background-color: black;
+}
+
+.share-button{
+    color:rgb(103, 103, 103);
+    margin:11px;
+    font-size: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+.share-button:hover{
+    color: black;
+}
+.image-part{
+    color:white;
+    margin: 30px auto auto auto;
+}
+.tick-button{
+    background-color:blue;
+    color:black;
+    border-radius: 50%;
+    
+}
+.tick-button >path{
+    
+    stroke-width: 2;
+}
+.subscribeButton{
+    background-color: white;
+    width: 130px;
+    padding: 10px 0;
+    border-radius: 20px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-weight: bold;
+    cursor: pointer;
+}
+.unlockSubscribe{
+    color:black;
+    border-radius: 10px;
+   width:200px;
+   margin-bottom: 20px;
+    
+}
+.share-subscribe{
+    display: flex;
+    width: 700px;
+    justify-content: space-between;
+    position: fixed;
+    margin-top: 15px;
+}
+
+.icon{
+    color:white;
+    border:1.7px solid white; display:inline-block; padding:4px 9px 2px 9px; border-radius:50% ;font-size:25px;
+    cursor:pointer;
+    margin: 0px 5px;
+    margin-top:10px;
+}
+.card{
+    border:2px solid white;
+    color: white;
+    border-radius: 10px;
+    width:650px;
+    margin:15px auto;
+    display: flex;
+}
+.card p{
+    margin-top: 1px;
+    margin-bottom: 20px;
+}
+
+.icon:hover{
+    transform: translateY(-3px);
+}
+
+.share{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color:white;
+    display:inline-block;
+   
+}
+.outer-share{
+    width:90px;
+}
+.buy{
+    width:280px;
+}
+.img_buy{
+    margin-top: 60px;
+}
+.all-icons{
+    width: 680px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.speed{
+    padding:15px;
+}
+.speed div{
+    margin: auto;
+    text-align: center;
+}
+.speed svg{
+    margin: auto 0;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;  
+    
+}
+form{
+    width:100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form>div{
+    width: 90%;
+    margin:auto;
+}
+.form h5{
+    margin-bottom: 20px;
+}
+#email, #phone{
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #000000;
+    border:1.5px solid white;
+    margin:0 auto 10px auto;
+    outline: none;
+    color:white;
+}
+#email:focus{
+    border: 1.5px solid rgb(163, 163, 250);
+}
+#phone:focus{
+    border: 1.5px solid rgb(163, 163, 250);
+}
+.submit{
+    width:120px !important;
+}
+.submit input{
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    /* padding:3px 0; */
+}
+.radioButton{
+    display: flex;
+    justify-content: space-evenly;
+    width:400px;
+    margin-bottom: 20px;
+}
+.radioButton input{
+    color:rgb(255, 255, 255);
+    background-color: white;
+}
+.custom-radio {
+    appearance: none;
+
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  
+    border: 2px solid rgb(255, 255, 255);
+    transition: 0.2s all linear;
+    margin-right: 5px;
+  
+    position: relative;
+    top: 4px;
+}
+.custom-radio:checked{
+    border: 5.5px solid rgb(0, 0, 0);
+    box-shadow: 0 0 0 1.5px #ffffff;
+    width: 17px;
+    height: 17px;
+}
+
+/* keyboard navigation focus appearance */
+.custom-radio:focus-visible {
+    outline-offset: 0;
+}
+.radioButton >div>div{
+    border-radius: 50%;
+    border:1px solid blue;
+}
+.arrow{
+    cursor: pointer;
+}
+.arrowdown{
+    transform: rotate(180deg);
+    transition: transform 0.5s;
+}
+.arrowup{
+   
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+  
+}
+.card_video{
+    display: flex;
+   
+    /* width: 700px; */
+    justify-content: space-between;
+}
+.card_arrow_video{
+    display: block;
+}
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  
+  .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  
+.subsModal{
+    position: absolute;
+    background-color: white;
+    top:15%;
+    /* left:32%; */
+    width:450px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.outer-img-modal{
+    background-image: url('./profile.PNG');
+    background-position: left;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 220px;
+    filter: brightness(0.5) blur(20px);
+    
+
+}
+.small-img{
+position: absolute;
+    top: 100px;
+    margin-left: 30px;
+    width: 60px;
+}
+
+.dollar15{
+    position: absolute;
+    top: 108px;
+    font-size: 18px;
+    background-color: gainsboro;
+    padding: 3px 10px;
+    font-weight: bolder;
+    border-radius: 20px;
+    right: 0;
+    margin-right: 20px;
+}
+.john{
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    top: 108px;
+    margin-left: 100px;
+    color: white;
+}
+.ready-box{
+    background: white;
+    position: absolute;
+    border-radius: 30px;
+    top: 190px;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ready-box h2{
+    
+    background: linear-gradient(90deg,#7058ff,#3ba7f6 101.12%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icons-three{
+    margin-right: 7px;
+}
+.threeLine{
+    margin-top: 20px;
+    text-align: left;
+}
+.threeLine > h4{
+    line-height: 1.5;
+}
+
+.subscribeDollar{
+    background: #131a2c;
+    color:white;
+    width:380px;
+    padding: 10px 0;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+.SubsCross{
+    position: absolute;
+    top: 25px;
+    font-size: 20px;
+    color: white;
+    background: hsla(0,0%,100%,.33);
+    padding: 5px 6px 0 6px;
+    border-radius: 50%;
+    right: 25px;
+}
+.SubsCross:hover{
+    box-shadow: 1px 1px 12px 2px rgb(255, 255, 255);
+    cursor: pointer;
+}
+.OuterBox-Modal{
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 780px) {
+   
+    .upper-part{   
+        width:90%;    
+    }
+    .share-subscribe {
+        width:90%;
+    }
+    .all-icons{
+        width: 90%;
+        justify-content: center;
+    }
+    .card{
+        width:85%;
+    }
+    .card img{
+        width:100%;
+    }
+    .card> div{
+        margin-right:10px !important;
+        margin-left: 10px !important;
+        text-align: center;
+    }
+    .speed{
+        display: flex !important;
+    }
+    .unlockSubscribe{
+        width:130px;
+        margin:0 auto 15px auto;
+    }
+    .speed div{
+        margin: auto !important;
+        text-align: center !important;
+
+    }
+    .speed svg{
+        margin: auto 0 !important;
+    }
+    .form{
+        display: flex !important;
+    }
+    .radioButton{
+        width:85%;
+    }
+
+    .radioButton>div{
+        display: flex;
+    }
+    .subsModal{
+        width:70%;
+    }
+    .ready-box{
+        width:100%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .subsModal{
+        width:100%;
+    }
+    .subscribeDollar{
+        width:100%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    
+    .image-part{
+        margin-top: 80px;
+    }
+    .card{
+        width:90%;
+        display: block;
+    }
+
+    /* .unlockSubscribe{
+        width:100px;
+        font-size: 14px;
+    } */
+  }
+
+  @media only screen and (max-width: 340px) {
+
+    .small-img{
+        margin-left: 10px;
+    }
+    .john{
+        margin-left: 80px;
+    }
+    .dollar15{
+        margin-right: 10px;
+    }
+  }

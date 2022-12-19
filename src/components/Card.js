@@ -1,46 +1,47 @@
-import React from 'react';
-import img1 from '../images/container image 2.jpg';
-import data from './data.js'
-import './card.css';
+import React from 'react'
+import {IoMdHeart} from "react-icons/io"
+import sideImage from "./sideImage.jpg"
+import {useEffect, useState} from 'react';
 
-const Card = () => {
-  return (
+const Card = (props) => {
 
-    <div className='cards'>
-  { 
-    data.map((d)=>{
+
+      const [windowSize, setWindowSize] = useState(getWindowSize());
     
-      return <div
-      key={d.id}
-      >
-      <div className='card' >
+      useEffect(() => {
+        function handleWindowResize() {
+          setWindowSize(getWindowSize());
+        }
+        
+        window.addEventListener('resize', handleWindowResize);
+    
+        return () => {
+          window.removeEventListener('resize', handleWindowResize);
+        };
+      }, []);
 
-        <div>
-        <img src={d.img}className="img" alt='container image1'/>
+
+
+  return (
+    <div className='card'>
+      <img src={sideImage} width="160" />
+      <div style={{marginTop:"25px", marginLeft:"20px", marginRight:"30px"}}>
+        <h3>{props.heading}</h3>
+        <p>{props.description}</p>
+        <div className='subscribeButton unlockSubscribe'>
+          <IoMdHeart 
+          style={{marginRight:'10'}}/> { windowSize.innerWidth>750? "Subscribe to Unlock" : "Subscribe" }
         </div>
-        <div className='card-body'>
-            <p>{d.first}</p>
-            <div  className="mid">
-                {d.mid}
-            </div>
-            <div className='last'>
-                {d.last}
-
-            </div>
-            <div className='button-link'>
-            <button>Button Text</button>
-            <p>Link</p>
-            </div>
-
-        </div>
-
+       
       </div>
-        </div>
-      
-      })
-}
     </div>
   )
 }
+
+
+function getWindowSize() {
+    const {innerWidth, innerHeight} = window;
+    return {innerWidth, innerHeight};
+  }
 
 export default Card
